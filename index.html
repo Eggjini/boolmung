@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥Boolmung</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+
+    <link href="/your-path-to-uicons/css/uicons-[your-style].css" rel="stylesheet"> <!--load all styles -->
+</head>
+<body>
+    <div id="navbar">
+        <a href="https://eggjini.tistory.com" target="blank" class="navlink">제작자</a>
+        <a href="https://github.com/eggjini" target="blank" class="navlink">깃허브</a>
+        <a href="https://pixabay.com" target="blank" class="navlink">소스 제공</a>
+        
+        <a href="./" id="boolmung">🔥Boolmung</a>
+        <img src="images/expand.png" alt="Full screen" id="fullBtnImg" onclick="openFullscreen()">
+        <img src="images/flame.png" alt="Settings" id="setBtnImg" onclick="openSettings()">
+    </div> <!--end navbar-->
+    <div id="settings">
+        <span id="setText">🔥설정 (settings)🔥</span>
+        <button id="playBtn">Play</button>
+        <span id="explain1">음량 (Volume)</span><input type="range" id="sound" min="0" max="100" value="60" onchange="soundSet()">
+    </div> <!--end setting-->
+    <div id="contents">
+        <video id="fire" src="fires/fire5.mp4"  muted="muted" loop width="80%"></video>
+
+    </div> <!--end contents-->
+
+    <script src="script.js"></script>
+</body>
+</html>

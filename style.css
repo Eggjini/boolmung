@@ -1,0 +1,184 @@
+:root {
+    --black: #221f1f;
+    --gray: #505050;
+    --white: #f5f5f1;
+    --red: #b81d24;
+    --red2: #e50914;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#fireaudio {
+    z-index: -5;
+    position: absolute;
+}
+
+body {
+    background-color: var(--black);
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+    font-family: 'GmarketSansMedium';
+}
+
+a:hover {
+    color: white;
+
+}
+
+a:visited {
+    color: var(--white);
+}
+
+#navbar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    align-items: center;
+
+    width: 100%;
+
+    margin: 20px;
+}
+
+.navlink {
+    margin: 10px;
+}
+
+#boolmung {
+    position: relative;
+    right: 4.5%;
+
+    font-size: 50px;
+    font-family: "Bebas Neue";
+    color: var(--red);
+
+    margin: 0 auto;
+}
+
+#fullBtnImg {
+    margin-right: 40px;
+    opacity: 0.9;
+    cursor: pointer;
+
+    width: 25px;
+    height: 25px;
+}
+
+#setBtnImg {
+    margin-right: 85px;
+    opacity: 0.9;
+    cursor: pointer;
+
+    width: 27px;
+    height: 27px;
+}
+
+#fullBtnImg:hover {
+    transform: scale(1.1);
+}
+
+#setBtnImg:hover {
+    transform: scale(1.1);
+}
+
+#contents {
+    display: flex;
+    justify-content: center;
+}
+
+
+#settings {
+    backdrop-filter: blur(22px) saturate(158%);
+    background-color: rgba(62, 62, 62, 0.76);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 500px;
+    height: 80%;
+
+    margin-left: 100%;
+    transform:translateX(-550px);
+    
+    border-radius: 30px;
+    opacity: 1;
+
+    visibility: hidden;
+
+    text-align: center;
+
+    font-family: "GmarketSansMedium";
+}
+
+input[type=range]:focus { 
+    outline: none; 
+}
+
+
+input[type=range]{ 
+    -webkit-appearance: none;  
+    margin: 0 auto;
+
+    height: 0px; 
+    width: 230px; 
+    margin-top: 30px;
+    box-shadow: 1px 1px 1px #ffffff, 0px 0px 1px snow; 
+    border: 1px solid #f5f5f1;
+    border-radius: 30px; 
+}
+
+input[type=range]:hover {
+    border: 1px solid #505050;
+    box-shadow: 1px 1px 1px var(--gray), 0px 0px 1px #505050; 
+}
+
+#playBtn {
+    width: 100px;
+    height: 40px;
+
+    font-family: "GmarketSansMedium";
+    font-weight: bold;
+
+    border: none;
+    background-color: var(--red2);
+    color: var(--white);
+    border-radius: 0px;
+
+    margin: 0 auto;
+}
+
+#playBtn:hover {
+    background-color: var(--red);
+    color: #ffffff;
+}
+
+#setText {
+    color: var(--white);
+    position: absolute;
+
+    margin-bottom: 80%;
+    
+}
+
+#explain1 {
+    color: var(--white);
+
+    margin-top: 40px;
+    margin-bottom: -20px;
+}
